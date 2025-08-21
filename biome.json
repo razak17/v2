@@ -65,16 +65,18 @@
       },
       "nursery": {
         "useSortedClasses": {
+          "fix": "safe",
           "level": "warn",
           "options": {
-            "attributes": ["classList"],
-            "functions": ["clsx", "cva", "tw"]
+            "attributes": ["classList", "className"],
+            "functions": ["clsx", "cva", "tw", "cn"]
           }
         }
       }
     },
     "includes": [
       "**",
+      "!**/globals.css",
       "!**/node_modules",
       "!**/dist",
       "!**/build",
