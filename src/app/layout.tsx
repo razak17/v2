@@ -1,10 +1,11 @@
-import { env } from "@/env.js";
 import type { Metadata, Viewport } from "next";
+
+import { fontMono, fontSans } from "@/lib/fonts";
+import { absoluteUrl, cn } from "@/lib/utils";
 
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/config/site";
-import { fontMono, fontSans } from "@/lib/fonts";
-import { absoluteUrl, cn } from "@/lib/utils";
+import { env } from "@/env.js";
 
 import "./globals.css";
 

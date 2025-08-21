@@ -2,13 +2,14 @@ import Link from "next/link";
 
 import { Icons } from "@/components/icons";
 import { ModeToggle } from "@/components/layouts/mode-toggle";
+import { Shell } from "@/components/shell";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 
 export default function Home() {
   return (
-    <div className="flex h-dvh flex-col items-center justify-center">
-      <section className="flex flex-col gap-4 text-sm">
+    <Shell className="flex h-dvh flex-col items-center justify-center">
+      <section className="prose prose-zinc dark:prose-invert flex flex-col gap-2 text-center">
         <p className="font-mono">Razak Mo.</p>
         <div className="flex items-center justify-center space-x-1">
           <Button variant="ghost" size="icon" className="size-7" asChild>
@@ -24,6 +25,6 @@ export default function Home() {
           <ModeToggle />
         </div>
       </section>
-    </div>
+    </Shell>
   );
 }
