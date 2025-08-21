@@ -5,12 +5,11 @@ import { ModeToggle } from "@/components/layouts/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 
-export default function Home() {
+export function SiteHeader() {
   return (
-    <div className="flex h-dvh flex-col items-center justify-center">
-      <section className="flex flex-col gap-4 text-sm">
-        <p className="font-mono">Razak Mo.</p>
-        <div className="flex items-center justify-center space-x-1">
+    <header className="w-full bg-background pt-4">
+      <div className="container flex h-16 items-center justify-center">
+        <nav className="flex items-center space-x-1">
           <Button variant="ghost" size="icon" className="size-7" asChild>
             <Link
               href={siteConfig.links.githubProfile}
@@ -22,8 +21,8 @@ export default function Home() {
             </Link>
           </Button>
           <ModeToggle />
-        </div>
-      </section>
-    </div>
+        </nav>
+      </div>
+    </header>
   );
 }

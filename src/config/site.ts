@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "razak",
+  name: "Razak Mo.",
   description: "Personal website of razak, built with Next.js.",
   url: "https://v2.razakmo.tech",
   ogImage: "https://v2.razakmo.tech/opengraph-image.png",
