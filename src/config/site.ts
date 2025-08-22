@@ -42,4 +42,17 @@ export const siteConfig = {
       icon: "gitHub",
     },
   ] satisfies SocialItem[],
+  skills: [
+    "JavaScript",
+    "TypeScript",
+    "Node.js",
+    "React",
+    "Next.js",
+    "Nest.js",
+    "Postgresql",
+    "MongDB",
+    "Docker",
+    "Python",
+    "FastAPI",
+  ],
 };

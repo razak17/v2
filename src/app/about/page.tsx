@@ -1,6 +1,5 @@
 import { SiteNav } from "@/components/layouts/site-nav";
 import { Shell } from "@/components/shell";
-import { siteConfig } from "@/config/site";
 
 export default function AboutPage() {
   return (
@@ -16,7 +15,7 @@ export default function AboutPage() {
           React, Node.js, Python (FastAPI), SQL and NoSQL databases. Transform
           ambiguous product requirements into reliable, maintainable solutions.
         </p>
-        <SiteNav items={siteConfig.mainNav} />
+        <SiteNav className="pt-4" />
       </section>
     </Shell>
   );

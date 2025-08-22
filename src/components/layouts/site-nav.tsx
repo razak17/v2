@@ -12,13 +12,9 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import type { NavItem } from "@/types";
+import { siteConfig } from "@/config/site";
 
-interface SiteNavProps {
-  items?: NavItem[];
-}
-
-export function SiteNav({ items }: SiteNavProps) {
+export function SiteNav({ className }: { className?: string }) {
   const pathname = usePathname();
 
   function isActive(href: string) {
@@ -35,12 +31,12 @@ export function SiteNav({ items }: SiteNavProps) {
   }
 
   return (
-    <header className="w-full bg-background">
+    <header className={cn("w-full bg-background", className)}>
       <div className="container items-center justify-center">
         <nav className="flex items-center justify-center space-x-4">
           <NavigationMenu>
             <NavigationMenuList>
-              {items?.map((item) => {
+              {siteConfig.mainNav?.map((item) => {
                 return (
                   <NavigationMenuItem key={item.title}>
                     <NavigationMenuLink
