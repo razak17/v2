@@ -1,4 +1,4 @@
-import { Icons } from "@/components/icons";
+import type { NavItem, SocialItem } from "@/tyypes";
 
 export type SiteConfig = typeof siteConfig;
 
@@ -25,17 +25,17 @@ export const siteConfig = {
       title: "Projects",
       href: "/projects",
     },
-  ],
+  ] satisfies NavItem[],
   socialLinks: [
     {
       name: "Email",
       href: "mailto:razakmoapps@gmail.com",
-      icon: Icons.email,
+      icon: "email",
     },
     {
       name: "GitHub",
       href: "https://github.com/razak17",
-      icon: Icons.gitHub,
+      icon: "gitHub",
     },
-  ],
+  ] satisfies SocialItem[],
 };
