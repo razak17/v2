@@ -14,6 +14,16 @@ export default function Home() {
         <div className="flex items-center justify-center space-x-1">
           <Button variant="ghost" size="icon" className="size-7" asChild>
             <Link
+              href="mailto:razakmoapps@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Icons.email className="size-4" />
+              <span className="sr-only">Email</span>
+            </Link>
+          </Button>
+          <Button variant="ghost" size="icon" className="size-7" asChild>
+            <Link
               href={siteConfig.links.githubProfile}
               target="_blank"
               rel="noreferrer"
