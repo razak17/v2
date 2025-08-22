@@ -1,3 +1,5 @@
+import { Icons } from "@/components/icons";
+
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
@@ -10,4 +12,30 @@ export const siteConfig = {
     github: "https://github.com/razak17/v2",
     githubProfile: "https://github.com/razak17",
   },
+  mainNav: [
+    {
+      title: "About",
+      href: "/about",
+    },
+    {
+      title: "Skills",
+      href: "/skills",
+    },
+    {
+      title: "Projects",
+      href: "/projects",
+    },
+  ],
+  socialLinks: [
+    {
+      name: "Email",
+      href: "mailto:razakmoapps@gmail.com",
+      icon: Icons.email,
+    },
+    {
+      name: "GitHub",
+      href: "https://github.com/razak17",
+      icon: Icons.gitHub,
+    },
+  ],
 };
