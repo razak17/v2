@@ -58,18 +58,20 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "Project A",
-      description: "An Awesome Description for Project A",
-      repo: "https://github.com/razak17",
-      link: "https://v2.razakmo.tech",
-      techStack: ["Next.js", "Node.js", "PostgreSQL"],
+      name: "Algo Visualizer",
+      description:
+        "Visualize sorting algorithms like bubble sort, merge sort, quick sort, and more. See how they work step by step.",
+      repo: "https://github.com/razak17/algo-visualizer",
+      link: "https://algo-visualizer-razakmo.vercel.app",
+      techStack: ["React", "Tailwind", "Algorithms"],
     },
     {
-      name: "Project B",
-      description: "An Awesome Description for Project B",
-      repo: "https://github.com/razak17",
-      link: "https://v2.razakmo.tech",
-      techStack: ["React", "Express", "MongoDB"],
+      name: "G-Client",
+      description:
+        "A comprehensive learning management system (LMS) built as part of Azubi Africa's TMP program (Cohort 2).",
+      repo: "https://github.com/razak17/next-lms-platform",
+      link: "https://lms.razakmo.tech",
+      techStack: ["NextJS", "Tailwind", "Postgres"],
     },
     {
       name: "Project C",
