@@ -55,4 +55,18 @@ export const siteConfig = {
     "Python",
     "FastAPI",
   ],
+  projects: [
+    {
+      name: "Project A",
+      description: "Description for Project A",
+      repo: "https://github.com/razak17",
+      link: "https://example.com/project-a",
+    },
+    {
+      name: "Project B",
+      description: "Description for Project B",
+      repo: "https://github.com/razak17",
+      link: "https://example.com/project-b",
+    },
+  ],
 };

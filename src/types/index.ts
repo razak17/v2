@@ -10,3 +10,11 @@ export type SocialItem = {
   href: string;
   icon?: keyof typeof Icons;
 };
+
+export type ProjectItem = {
+  name: string;
+  description: string;
+  link: string;
+  repo?: string;
+  techStack: string[];
+};
