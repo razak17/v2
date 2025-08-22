@@ -1,0 +1,20 @@
+import { Shell } from "@/components/shell";
+
+export default function AboutPage() {
+  return (
+    <Shell className="flex h-dvh flex-col items-center justify-center font-mono">
+      <section className="prose prose-zinc dark:prose-invert flex max-w-xl flex-col gap-2">
+        <h1 className="text-center font-medium">About</h1>
+        <p className="text-muted-foreground text-sm">
+          Full Stack Software Developer with 3+ years of experience designing,
+          building, and optimizing scalable, cloud-enabled web applications.
+          Proven success delivering secure, high‑performance RESTful and GraphQL
+          services, modern frontends, and CI/CD automation across Agile teams.
+          Skilled in JavaScript/TypeScript, React, Node.js, Python (FastAPI),
+          SQL and NoSQL databases. Transform ambiguous product requirements into
+          reliable, maintainable solutions.
+        </p>
+      </section>
+    </Shell>
+  );
+}
