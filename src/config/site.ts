@@ -1,4 +1,4 @@
-import type { NavItem, SocialItem } from "@/tyypes";
+import type { NavItem, SocialItem } from "@/types";
 
 export type SiteConfig = typeof siteConfig;
 
@@ -13,6 +13,10 @@ export const siteConfig = {
     githubProfile: "https://github.com/razak17",
   },
   mainNav: [
+    {
+      title: "Home",
+      href: "/",
+    },
     {
       title: "About",
       href: "/about",

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { ModeToggle } from "./mode-toggle";
 import { Button } from "@/components/ui/button";
-import type { SocialItem } from "@/tyypes";
+import type { SocialItem } from "@/types";
 import { Icons } from "../icons";
 
 interface SiteSocialsProps {
@@ -11,7 +11,7 @@ interface SiteSocialsProps {
 
 export function SiteSocials({ items }: SiteSocialsProps) {
   return (
-    <footer className="w-full bg-background pt-2">
+    <footer className="w-full bg-background">
       <div className="container items-center justify-center">
         <div className="flex items-center justify-center space-x-4 text-sm">
           {items?.map((item) => {
@@ -32,6 +32,7 @@ export function SiteSocials({ items }: SiteSocialsProps) {
                   aria-label={item.name}
                 >
                   {item.icon ? <Icon /> : item.name}
+                  <span className="sr-only">{item.name}</span>
                 </Link>
               </Button>
             );
