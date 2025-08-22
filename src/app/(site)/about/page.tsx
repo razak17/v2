@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
+
 import { SiteNav } from "@/components/layouts/site-nav";
 import { Shell } from "@/components/shell";
 import { Separator } from "@/components/ui/separator";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Learn more about me.",
+};
 
 export default function AboutPage() {
   return (

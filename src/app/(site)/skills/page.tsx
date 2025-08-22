@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
+
 import { SiteNav } from "@/components/layouts/site-nav";
 import { Shell } from "@/components/shell";
 import { Separator } from "@/components/ui/separator";
 import { siteConfig } from "@/config/site";
+
+export const metadata: Metadata = {
+  title: "Skills",
+  description: "A list of my technical skills and proficiencies.",
+};
 
 export default function SkillsPage() {
   return (
