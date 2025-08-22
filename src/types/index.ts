@@ -16,5 +16,5 @@ export type ProjectItem = {
   description: string;
   link: string;
   repo?: string;
-  techStack: string[];
+  techStack?: string[];
 };

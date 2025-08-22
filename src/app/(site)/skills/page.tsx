@@ -1,5 +1,6 @@
 import { SiteNav } from "@/components/layouts/site-nav";
 import { Shell } from "@/components/shell";
+import { Separator } from "@/components/ui/separator";
 import { siteConfig } from "@/config/site";
 
 export default function SkillsPage() {
@@ -17,6 +18,7 @@ export default function SkillsPage() {
             </span>
           ))}
         </div>
+        <Separator />
         <SiteNav className="pt-4" />
       </section>
     </Shell>

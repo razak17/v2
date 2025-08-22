@@ -1,4 +1,4 @@
-import type { NavItem, SocialItem } from "@/types";
+import type { NavItem, ProjectItem, SocialItem } from "@/types";
 
 export type SiteConfig = typeof siteConfig;
 
@@ -58,15 +58,31 @@ export const siteConfig = {
   projects: [
     {
       name: "Project A",
-      description: "Description for Project A",
+      description: "An Awesome Description for Project A",
       repo: "https://github.com/razak17",
       link: "https://example.com/project-a",
+      techStack: ["Next.js", "Node.js", "PostgreSQL"],
     },
     {
       name: "Project B",
-      description: "Description for Project B",
+      description: "An Awesome Description for Project B",
       repo: "https://github.com/razak17",
       link: "https://example.com/project-b",
+      techStack: ["React", "Express", "MongoDB"],
     },
-  ],
+    {
+      name: "Project C",
+      description: "An Awesome Description for Project C",
+      repo: "https://github.com/razak17",
+      link: "https://example.com/project-c",
+      techStack: ["React", "Express", "MongoDB"],
+    },
+    {
+      name: "Project D",
+      description: "An Awesome Description for Project D",
+      repo: "https://github.com/razak17",
+      link: "https://example.com/project-d",
+      techStack: ["React", "Express", "MongoDB"],
+    },
+  ] satisfies ProjectItem[],
 };
