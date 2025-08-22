@@ -1,7 +1,5 @@
 import { SiteNav } from "@/components/layouts/site-nav";
-import { SiteSocials } from "@/components/layouts/site-socials";
 import { Shell } from "@/components/shell";
-import { siteConfig } from "@/config/site";
 
 export default function Home() {
   return (
@@ -9,7 +7,6 @@ export default function Home() {
       <section className="prose prose-zinc dark:prose-invert flex max-w-md flex-col gap-4">
         <h1 className="text-center font-medium">Razak Mo.</h1>
         <SiteNav />
-        <SiteSocials items={siteConfig.socialLinks} />
       </section>
     </Shell>
   );

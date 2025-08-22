@@ -1,3 +1,4 @@
+import type { Icons } from "@/components/icons";
 import type { NavItem, ProjectItem, SocialItem } from "@/types";
 
 export type SiteConfig = typeof siteConfig;
@@ -34,12 +35,12 @@ export const siteConfig = {
     {
       name: "Email",
       href: "mailto:razakmoapps@gmail.com",
-      icon: "email",
+      icon: "email" as keyof typeof Icons,
     },
     {
       name: "GitHub",
       href: "https://github.com/razak17",
-      icon: "gitHub",
+      icon: "gitHub" as keyof typeof Icons,
     },
   ] satisfies SocialItem[],
   skills: [
