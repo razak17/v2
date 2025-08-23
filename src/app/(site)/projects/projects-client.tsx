@@ -35,7 +35,7 @@ export function ProjectsClient() {
   };
 
   return (
-    <Shell className="flex flex-col items-center justify-center font-mono">
+    <Shell className="flex flex-col items-center justify-center font-mono md:h-dvh">
       <section className="prose prose-zinc dark:prose-invert flex max-w-3xl flex-col gap-4">
         <h1 className="text-center font-medium">Projects</h1>
 
