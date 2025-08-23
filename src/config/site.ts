@@ -58,14 +58,6 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "Algo Visualizer",
-      description:
-        "Visualize sorting algorithms like bubble sort, merge sort, quick sort, and more. See how they work step by step.",
-      repo: "https://github.com/razak17/algo-visualizer",
-      link: "https://algo-visualizer-razakmo.vercel.app",
-      techStack: ["React", "Tailwind", "Algorithms"],
-    },
-    {
       name: "G-Client",
       description:
         "A comprehensive learning management system (LMS) built as part of Azubi Africa's TMP program (Cohort 2).",
@@ -74,18 +66,19 @@ export const siteConfig = {
       techStack: ["NextJS", "Tailwind", "Postgres"],
     },
     {
-      name: "Project C",
-      description: "An Awesome Description for Project C.",
-      repo: "https://github.com/razak17",
-      link: "https://v2.razakmo.tech",
-      techStack: ["React", "Express", "MongoDB"],
+      name: "Docs",
+      description: "A Google Docs clone built with Next.js 15 and React 19.",
+      repo: "https://github.com/razak17/fullstack-docs-clone",
+      link: "https://fullstack-docs-clone.vercel.app/",
+      techStack: ["NextJS", "Tailwind", "Convex"],
     },
     {
-      name: "Project D",
-      description: "An Awesome Description for Project D",
-      repo: "https://github.com/razak17",
-      link: "https://v2.razakmo.tech",
-      techStack: ["React", "Express", "MongoDB"],
+      name: "Algo Visualizer",
+      description:
+        "Visualize sorting algorithms like bubble sort, merge sort, quick sort, and more. See how they work step by step.",
+      repo: "https://github.com/razak17/algo-visualizer",
+      link: "https://algo-visualizer-razakmo.vercel.app",
+      techStack: ["React", "Tailwind", "Algorithms"],
     },
   ] satisfies ProjectItem[],
 };
