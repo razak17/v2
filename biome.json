@@ -23,16 +23,7 @@
   "formatter": {
     "enabled": true,
     "indentWidth": 2,
-    "indentStyle": "space",
-    "includes": [
-      "**",
-      "!**/node_modules",
-      "!**/dist",
-      "!**/build",
-      "!**/public",
-      "!**/.turbo",
-      "**/.next"
-    ]
+    "indentStyle": "space"
   },
   "linter": {
     "enabled": true,
@@ -73,23 +64,8 @@
           }
         }
       }
-    },
-    "includes": [
-      "**",
-      "!**/globals.css",
-      "!**/node_modules",
-      "!**/dist",
-      "!**/build",
-      "!**/public",
-      "!**/.turbo",
-      "**/.next"
-    ]
-  },
-  "overrides": [
-    {
-      "includes": ["**/*.test.ts"]
     }
-  ],
+  },
   "vcs": {
     "enabled": true,
     "clientKind": "git",
@@ -98,6 +74,7 @@
   "files": {
     "includes": [
       "**",
+      "!**/globals.css",
       "!**/node_modules",
       "!**/dist",
       "!**/build",
