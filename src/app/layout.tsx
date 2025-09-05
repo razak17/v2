@@ -9,6 +9,9 @@ import { env } from "@/env.js";
 
 import "../styles/globals.css";
 
+import { Shell } from "@/components/shell";
+import { Spotlight } from "@/components/ui/spotlight-new";
+
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
   title: {
@@ -81,7 +84,12 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="relative flex min-h-screen flex-col">
-            <main className="flex-1">{children}</main>
+            <main className="flex-1">
+              <Shell className="relative flex h-dvh flex-col items-center justify-center overflow-hidden font-mono">
+                <Spotlight />
+                {children}
+              </Shell>
+            </main>
           </div>
         </ThemeProvider>
       </body>
