@@ -3,28 +3,24 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 import { Icons } from "@/components/icons";
+import SpotlightCard from "@/components/spotlight-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import type { ProjectItem } from "@/types";
 
 export function ProjectCard({ project }: { project: ProjectItem }) {
   return (
-    <Card
+    <SpotlightCard
       key={project.name}
-      className="flex flex-col justify-between transition-shadow hover:shadow-lg"
+      className="flex flex-col justify-between px-6 py-4 transition-shadow hover:shadow-lg"
     >
-      <CardHeader>
-        <CardTitle>{project.name}</CardTitle>
-        <CardDescription>{project.description}</CardDescription>
-      </CardHeader>
-      <CardContent className="bottom-0 flex flex-col gap-4">
+      <div>
+        <h3 className="font-semibold text-xl">{project.name}</h3>
+        <p className="mt-2 text-muted-foreground text-sm">
+          {project.description}
+        </p>
+      </div>
+      <div className="bottom-0 mt-4 flex flex-col gap-4">
         {project.techStack && (
           <div className="flex flex-wrap gap-2">
             {project.techStack.map((tech) => (
@@ -68,7 +64,7 @@ export function ProjectCard({ project }: { project: ProjectItem }) {
             </Button>
           )}
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </SpotlightCard>
   );
 }

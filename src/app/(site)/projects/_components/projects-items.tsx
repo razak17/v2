@@ -4,14 +4,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
 import { ProjectCard } from "./project-card";
-import { SiteNav } from "@/components/layouts/site-nav";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import { siteConfig } from "@/config/site";
 
 const PROJECTS_PER_PAGE = 3;
 
-export function ProjectsClient() {
+export function ProjectsItems() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalProjects = siteConfig.projects.length;
@@ -34,11 +32,7 @@ export function ProjectsClient() {
   };
 
   return (
-    <section className="prose prose-zinc dark:prose-invert flex max-w-3xl flex-col gap-4">
-      <h1 className="bg-gradient-to-b bg-opacity-50 from-neutral-50 to-neutral-400 bg-clip-text text-center font-bold text-4xl text-transparent md:text-7xl">
-        Projects
-      </h1>
-
+    <>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3">
         {currentProjects.map((project) => (
           <ProjectCard key={project.name} project={project} />
@@ -87,9 +81,6 @@ export function ProjectsClient() {
         Showing {startIndex + 1}-{Math.min(endIndex, totalProjects)} of{" "}
         {totalProjects} projects
       </div>
-
-      <Separator />
-      <SiteNav className="pt-4" />
-    </section>
+    </>
   );
 }
