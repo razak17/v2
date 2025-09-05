@@ -13,6 +13,7 @@ export function ProjectCard({ project }: { project: ProjectItem }) {
     <SpotlightCard
       key={project.name}
       className="flex flex-col justify-between px-6 py-4 transition-shadow hover:shadow-lg"
+      spotlightColor="rgba(255, 255, 255, 0.1)"
     >
       <div>
         <h3 className="font-semibold text-xl">{project.name}</h3>

@@ -26,7 +26,7 @@ const GlareHover: React.FC<GlareHoverProps> = ({
   height = "500px",
   background = "#000",
   borderRadius = "10px",
-  borderColor = "#333",
+  // borderColor = "#333",
   children,
   glareColor = "#ffffff",
   glareOpacity = 0.5,
